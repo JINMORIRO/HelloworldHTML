@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--한국어를 주언어로 사용하는 경우의 html태그-->
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+
+        <!--SEO(검색엔진 최적화) 키워드 정의-->
+        <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript, 의류쇼핑몰, 만들고싶다, 노래방">
+        <!--SEO(검색엔진 최적화) 키워드 정의-->
+
+        <!--웹페이지 설명 정의-->
+        <meta name="description" content="프론트엔드 뉴비가 만들었어요 응애">
+        <!--웹페이지 설명 정의-->
+
+        <!--웹페이지 저자 정의-->
+        <meta name="author" content="김진모">
+        <!--웹페이지 저자 정의-->
+
+        <!--http-equiv 속성은 http 헤더에 정보값을 제공하는 콘텐트 속성임.-->
+        <meta http-equiv="refresh" content="5">
+        <!--http 헤더에 refresh(새로고침)이라는 정보를 content에 제공하는데 그 값이 5초-->
+
+        <title>Hello World</title>
+
+        <!--link요소는 외부 리소스와 연계. 주로 css파일 연동시키는데 쓰임-->    
+        <link rel="stylesheet" href="style.css">
+        <!--link요소는 외부 리소스와 연계. 주로 css파일 연동시키는데 쓰임-->
+
+        <!--이건 style요소 html코드에 직접 삽입방법-->
+        <style>
+            body {
+                background-color: green;
+                color: white;
+            }
+        </style>
+        <!--이건 style요소 html코드에 직접 삽입방법-->
+
+        <!--자바스크립트 직접 삽입-->
+        <script>
+            document.addEventListener('click', function () {
+                alert('Clicked!');
+            });
+        </script>
+        <!--자바스크립트 직접 삽입-->
+
+        <!--외부 자바스크립트 로드-->
+        <script src="main.js"></script>
+        <!--외부 자바스크립트 로드-->
+
+    </head>
+    <body>
+        <!--제목(Headings)태그는 1-6까지 있으며 h1은 가장 중요한 제목을 의미-->
+        <h1>Hello World</h1>
+        <!--시맨틱 웹의 의미를 살려서 제목 이외에는 사용하지 않는 것이 좋음.-->
+
+        <p>안녕하세요! HTML5</p>
+
+        <!--둘은 시각적 요소로 같다. 위는 자연어 밑은 시맨틱요소로-->
+        <font size="6"><b>코딩은 어려워</b></font>
+        <h1>코딩은 어려워</h1>
+        <!--밑이 조금더 크롤링 봇이 해석하기 좋다. 의미가 있는 코드란 뜻. <b>태그는 폰트를 볼드화시킴.-->
+        
+        <i>이탤릭체</i>
+        <em>강조, 중요한 텍스트 지정. 이텔릭체로 표기됨 시맨틱 요소로서 활용.</em>
+        <h2>그냥 텍스트<mark>하이라이티드 텍스트</mark>그냥 텍스트</h2>
+
+        <h1 id="top">This is a heading. also top of page!</h1>
+        <hr> <!--수평줄 삽입 태그-->
+        <p>단락을 지정하는 태그임</p>
+        <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor<br>
+incididunt ut labore &nbsp;et dolore magna aliqua. &nbsp;Ut enim ad minim veniam,
+quis nostrud exercitation &nbsp;ullamco laboris nisi ut <q>aliquip ex ea commodo consequat.</q></p>
+        
+        <hr>
+
+        <!--이미지 삽입 태그-->
+        <img src="model1.jpg" width="1000" height="1000">
+        <!--이미지 삽입 태그-->
+
+        <hr>
+
+        <!--a태그 =a는 앵커의 약자로 앵커는 html에서 웹 하이퍼링크의 출발지와 도착지. -->
+        <a href="http://weever.kr">Visit weever.kr!</a>
+        <!--href = 하이퍼 텍스트 레퍼런스-->
+
+        <hr>
+        
+        <!--rel="noopener noreferrer"는 tabnabbing 피싱공격 방지-->
+        <a href="http://weever.kr" target="_blank" rel="noopener noreferrer">절대 URL http://weever.kr _blank 타겟 어트리뷰트로 새로운 창에서 페이지를 열기.</a><br>
+        <a href="html/Hello World.html">상대 URL 자신 위치 기준 대상 URL html/Hello World.html</a><br>
+        <a href="file/model.jpg" download>파일 다운로드</a><br>
+        <a href="#top">fragment identifier(부분 식별자) 웹 페이지 안에서 특정 부분으로 이동하고 싶을 때 이용.</a>
+    </body>
+</html>
